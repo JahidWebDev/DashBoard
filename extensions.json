@@ -1,0 +1,37 @@
+{
+  "recommendations": [
+    // 🎨 Themes
+    "zhuangtongfa.Material-theme",
+    "dracula-theme.theme-dracula",
+    "robbowen.synthwave-vscode",
+    "wesbos.theme-cobalt2",
+    "teabyii.ayu",
+    "monokai.theme-monokai-pro-vscode",
+    "sdras.night-owl",
+    "ahmadawais.shades-of-purple",
+    "enkia.tokyo-night",
+    "jchannon.horizon-theme-vscode",
+    "tinkertrain.theme-panda",
+
+    // ⚡ Productivity
+    "esbenp.prettier-vscode",
+    "eamodio.gitlens",
+    "tabnine.tabnine-vscode",
+    "formulahendry.auto-rename-tag",
+    "formulahendry.auto-close-tag",
+    "christian-kohler.path-intellisense",
+    "rangav.vscode-thunder-client",
+    "aaron-bond.better-comments",
+    "alefragnani.project-manager",
+    "alefragnani.bookmarks",
+    "pkief.material-icon-theme",
+
+    // 🚀 MERN Stack
+    "dsznajder.es7-react-js-snippets",
+    "bradlc.vscode-tailwindcss",
+    "heybourn.headwind",
+    "mikestead.dotenv",
+    "christian-kohler.npm-intellisense",
+    "mongodb.mongodb-vscode"
+  ]
+}

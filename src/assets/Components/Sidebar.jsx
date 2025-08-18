@@ -20,6 +20,7 @@ import {
   PowerIcon,
 } from "@heroicons/react/24/solid";
 import { ChevronRightIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
+import { Link } from "react-router";
  
 export function Sidebar() {
   const [open, setOpen] = React.useState(0);
@@ -29,8 +30,8 @@ export function Sidebar() {
   };
  
   return (
-    <Card className="h-[calc(100vh-2rem)] w-full max-w-[20rem] p-4 shadow-xl shadow-blue-gray-900/5">
-      <div className="mb-2 p-4">
+    <Card className="min-h-screen p-6 bg-gradient-to-r from-indigo-100 to-blue-100">
+      <div className="p-4 mb-2">
         <Typography variant="h5" color="blue-gray">
           Sidebar
         </Typography>
@@ -47,9 +48,9 @@ export function Sidebar() {
           }
         >
           <ListItem className="p-0" selected={open === 1}>
-            <AccordionHeader onClick={() => handleOpen(1)} className="border-b-0 p-3">
+            <AccordionHeader onClick={() => handleOpen(1)} className="p-3 border-b-0">
               <ListItemPrefix>
-                <PresentationChartBarIcon className="h-5 w-5" />
+                <PresentationChartBarIcon className="w-5 h-5" />
               </ListItemPrefix>
               <Typography color="blue-gray" className="mr-auto font-normal">
                 Dashboard
@@ -60,19 +61,19 @@ export function Sidebar() {
             <List className="p-0">
               <ListItem>
                 <ListItemPrefix>
-                  <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
+                  <ChevronRightIcon strokeWidth={3} className="w-5 h-3" />
                 </ListItemPrefix>
                 Analytics
               </ListItem>
               <ListItem>
                 <ListItemPrefix>
-                  <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
+                  <ChevronRightIcon strokeWidth={3} className="w-5 h-3" />
                 </ListItemPrefix>
                 Reporting
               </ListItem>
               <ListItem>
                 <ListItemPrefix>
-                  <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
+                  <ChevronRightIcon strokeWidth={3} className="w-5 h-3" />
                 </ListItemPrefix>
                 Projects
               </ListItem>
@@ -89,9 +90,9 @@ export function Sidebar() {
           }
         >
           <ListItem className="p-0" selected={open === 2}>
-            <AccordionHeader onClick={() => handleOpen(2)} className="border-b-0 p-3">
+            <AccordionHeader onClick={() => handleOpen(2)} className="p-3 border-b-0">
               <ListItemPrefix>
-                <ShoppingBagIcon className="h-5 w-5" />
+                <ShoppingBagIcon className="w-5 h-5" />
               </ListItemPrefix>
               <Typography color="blue-gray" className="mr-auto font-normal">
                 E-Commerce
@@ -100,15 +101,31 @@ export function Sidebar() {
           </ListItem>
           <AccordionBody className="py-1">
             <List className="p-0">
+              <Link to="/createcategory">
+                <ListItem>
+                <ListItemPrefix>
+                  <ChevronRightIcon strokeWidth={3} className="w-5 h-3" />
+                </ListItemPrefix>
+                Create Category
+              </ListItem>
+              </Link>
+              <Link to="/categorylist">
+                <ListItem>
+                <ListItemPrefix>
+                  <ChevronRightIcon strokeWidth={3} className="w-5 h-3" />
+                </ListItemPrefix>
+                Category List
+              </ListItem>
+              </Link>
               <ListItem>
                 <ListItemPrefix>
-                  <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
+                  <ChevronRightIcon strokeWidth={3} className="w-5 h-3" />
                 </ListItemPrefix>
                 Orders
               </ListItem>
               <ListItem>
                 <ListItemPrefix>
-                  <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
+                  <ChevronRightIcon strokeWidth={3} className="w-5 h-3" />
                 </ListItemPrefix>
                 Products
               </ListItem>

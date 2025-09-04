@@ -123,12 +123,14 @@ export function Sidebar() {
                 </ListItemPrefix>
                 Orders
               </ListItem>
+             <Link to={`/createproduct`}>
               <ListItem>
                 <ListItemPrefix>
                   <ChevronRightIcon strokeWidth={3} className="w-5 h-3" />
                 </ListItemPrefix>
                 Products
               </ListItem>
+             </Link>
             </List>
           </AccordionBody>
         </Accordion>
